@@ -1,0 +1,24 @@
+/* LOGO */
+
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.logo--alt {
+  color: var(--alt-title-color);
+}
+
+.logo__accent {
+  color: var(--accent-color);
+}
+
+.site-nav__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}

@@ -1,0 +1,14 @@
+.address {
+  font-style: inherit;
+}
+.address__item {
+  display: block;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__item--transp {
+  color: var(--transp-text-color);
+}
