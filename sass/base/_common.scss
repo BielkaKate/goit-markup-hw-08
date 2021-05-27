@@ -55,6 +55,12 @@ p {
   list-style: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);

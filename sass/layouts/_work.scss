@@ -1,4 +1,9 @@
 /* work */
+.work {
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
+}
 .work__list {
   display: flex;
 }

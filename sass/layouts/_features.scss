@@ -1,19 +1,29 @@
 /* features */
 
 .features {
-  padding-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
+  }
 }
 
 .features__list {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .features__item {
-  width: 270px;
-}
+  flex-basis: 100%;
+  margin-left: 30px;
+  margin-top: 30px;
 
-.features__item:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px * 2) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px * 4) / 4);
+  }
 }
 
 .feature__pic {
@@ -32,4 +42,8 @@
   text-transform: uppercase;
   color: var(--title-color);
   margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }

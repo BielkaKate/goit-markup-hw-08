@@ -1,0 +1,119 @@
+.mobile-menu--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--background-color);
+}
+
+.mobile-menu--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 40px;
+  height: 100%;
+}
+
+.mobile-menu--close {
+  position: absolute;
+  right: 25px;
+  top: 21px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-menu--list {
+  .mobile-menu--item {
+    .mobile-menu--link {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: var(--title-color);
+      &:hover,
+      &:focus {
+        color: var(--accent-color);
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.mobile-menu--tel-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-menu--mail-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu--social-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-menu--social-list {
+  display: flex;
+}
+
+.mobile-menu--contacts-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu--contacts-list {
+  margin-bottom: 64px;
+}
+
+.link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-menu--social-item {
+  position: relative;
+  &:not(:first-child) {
+    margin-left: 20px;
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+
+    margin-left: 10px;
+    width: 2px;
+    height: 22px;
+
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+}
